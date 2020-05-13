@@ -1,0 +1,50 @@
+# This is a basic workflow to help you get started with Actions
+
+name: generate-file
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches:
+      - raw
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+
+    # Runs a single command using the runners shell
+    - name: merge custom.txt
+      run: |
+        curl https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt > gfwlist.txt
+        base64 -i -d gfwlist.txt > gfwlist_raw.txt
+        sed -i '$d' gfwlist_raw.txt && sed -i '$d' gfwlist_raw.txt
+        cat custom.txt >> gfwlist_raw.txt
+        sed -i '/! Checksum:/d' gfwlist_raw.txt
+        sed -i 's/! Expires: 6h/! Expires: 72h/' gfwlist_raw.txt
+        nowtime=$(date "+%Y-%m-%d %H:%M:%S")
+        sed -i "s/! Last Modified: Mon, 04 Nov 2019 11:21:47 -0500/! Last Modified: $nowtime/" gfwlist_raw.txt
+        mkdir PushDir
+        cp gfwlist_raw.txt PushDir/
+
+    # Runs a set of commands using the runners shell
+    - name: Commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "deployed by GitHub Action" -a
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: 'file'
+        force: true
+        directory: 'PushDir'
