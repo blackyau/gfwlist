@@ -1,4 +1,4 @@
-name: generate file
+name: generate
 on:
   push:
     branches: [ raw ]
