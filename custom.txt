@@ -1,0 +1,36 @@
+
+!################Custom List Start################
+||githubusercontent.com
+||fossa.com
+||duyaoss.com
+||fontawesome.com
+||fortawesome.com
+||disquscdn.com
+||openwrt.org
+||ifttt.com
+||python-requests.org
+||tampermonkey.net
+||github.com
+||nintendo.com
+||userstyles.org
+||mysql.com
+||lastpass.com
+||greasyfork.org
+||xda-developers.com
+||stackexchange.com
+||cloudfront.net
+||subhd.tv
+||googletagmanager.com
+||telegra.ph
+||apache.org
+||githubassets.com
+||sstatic.net
+||stackoverflow.com
+||travis-ci.org
+||sjhs.pw
+||pusherapp.com
+||statuspage.io
+||pusher.com
+!||github.io
+!################Custom List End################
+!---------------------EOF-----------------------
