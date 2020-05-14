@@ -25,6 +25,7 @@ jobs:
         cat gfwlist_raw.txt | tail -n 30
         mkdir PushDir
         cp gfwlist_raw.txt PushDir/
+        curl https://cdn.jsdelivr.net/gh/blackyau/gfwlist@file/gfwlist_raw.txt > /dev/null
 
     - name: Commit files
       run: |
