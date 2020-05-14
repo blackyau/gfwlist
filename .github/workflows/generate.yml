@@ -21,13 +21,18 @@ jobs:
         sed -i 's/! Expires: 6h/! Expires: 72h/' gfwlist_raw.txt
         nowtime=$(date "+%Y-%m-%d %H:%M:%S")
         sed -i "s/! Last Modified: Mon, 04 Nov 2019 11:21:47 -0500/! Last Modified: $nowtime/" gfwlist_raw.txt
+        cat gfwlist_raw.txt | head -n 40
+        cat gfwlist_raw.txt | tail -n 30
         mkdir PushDir
         cp gfwlist_raw.txt PushDir/
 
     - name: Commit files
       run: |
+        cd ./PushDir
+        git init
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+        git add .
         git commit -m "deployed by GitHub Action" -a
 
     - name: Push changes
