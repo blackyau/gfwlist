@@ -29,6 +29,7 @@ jobs:
     - name: Commit files
       run: |
         cd ./PushDir
+        echo -e "# File Url\n\nhttps://cdn.jsdelivr.net/gh/blackyau/gfwlist@file/gfwlist_raw.txt" > README.md
         git init
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
