@@ -16,7 +16,7 @@ jobs:
         curl https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt > gfwlist.txt
         base64 -i -d gfwlist.txt > gfwlist_raw.txt
         sed -i '$d' gfwlist_raw.txt && sed -i '$d' gfwlist_raw.txt
-        cat custom.txt >> gfwlist_raw.txt <<EOF
+        cat custom.txt >> gfwlist_raw.txt
         sed -i '/! Checksum:/d' gfwlist_raw.txt
         sed -i 's/! Expires: 6h/! Expires: 72h/' gfwlist_raw.txt
         nowtime=$(date "+%Y-%m-%d %H:%M:%S")
