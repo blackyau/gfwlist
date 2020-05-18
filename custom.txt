@@ -27,6 +27,7 @@
 ||sstatic.net
 ||stackoverflow.com
 ||travis-ci.org
+||travis-ci.com
 ||sjhs.pw
 ||pusherapp.com
 ||statuspage.io
