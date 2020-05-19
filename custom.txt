@@ -34,5 +34,6 @@
 ||pusher.com
 ||github.io
 ||freemypdf.com
+||gstatic.com
 !################Custom List End################
 !---------------------EOF-----------------------
