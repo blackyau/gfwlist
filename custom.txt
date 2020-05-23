@@ -35,5 +35,6 @@
 ||github.io
 ||freemypdf.com
 ||gstatic.com
+||pximg.net
 !################Custom List End################
 !---------------------EOF-----------------------
