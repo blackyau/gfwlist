@@ -36,5 +36,6 @@
 ||freemypdf.com
 ||gstatic.com
 ||pximg.net
+||wikimedia.org
 !################Custom List End################
 !---------------------EOF-----------------------
