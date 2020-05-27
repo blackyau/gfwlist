@@ -13,7 +13,7 @@ jobs:
 
     - name: merge custom.txt
       run: |
-        curl https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt > gfwlist.txt
+        curl https://raw.githubusercontent.com/blackyau/gfwlist/master/gfwlist.txt > gfwlist.txt
         base64 -i -d gfwlist.txt > gfwlist_raw.txt
         sed -i '$d' gfwlist_raw.txt && sed -i '$d' gfwlist_raw.txt
         cat custom.txt >> gfwlist_raw.txt
