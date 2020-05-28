@@ -37,5 +37,6 @@
 ||gstatic.com
 ||pximg.net
 ||wikimedia.org
+||feedly.com
 !################Custom List End################
 !---------------------EOF-----------------------
