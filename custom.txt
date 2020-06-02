@@ -38,5 +38,6 @@
 ||pximg.net
 ||wikimedia.org
 ||feedly.com
+||twimg.com
 !################Custom List End################
 !---------------------EOF-----------------------
