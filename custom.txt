@@ -39,5 +39,7 @@
 ||wikimedia.org
 ||feedly.com
 ||twimg.com
+||ntt-co-jp.club
+||ssrcloud.com
 !################Custom List End################
 !---------------------EOF-----------------------
