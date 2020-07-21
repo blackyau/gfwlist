@@ -1,7 +1,8 @@
 name: Generate
 on:
   push:
-    branches: [ raw ]
+    branches:
+      - raw
 
 jobs:
   build:
@@ -12,7 +13,7 @@ jobs:
 
     - name: merge custom.txt
       run: |
-        curl https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt > gfwlist.txt
+        curl https://raw.githubusercontent.com/blackyau/gfwlist/master/gfwlist.txt > gfwlist.txt
         base64 -i -d gfwlist.txt > gfwlist_raw.txt
         sed -i '$d' gfwlist_raw.txt && sed -i '$d' gfwlist_raw.txt
         cat custom.txt >> gfwlist_raw.txt
@@ -20,19 +21,26 @@ jobs:
         sed -i 's/! Expires: 6h/! Expires: 72h/' gfwlist_raw.txt
         nowtime=$(date "+%Y-%m-%d %H:%M:%S")
         sed -i "s/! Last Modified: Mon, 04 Nov 2019 11:21:47 -0500/! Last Modified: $nowtime/" gfwlist_raw.txt
+        cat gfwlist_raw.txt | head -n 40
+        cat gfwlist_raw.txt | tail -n 30
         mkdir PushDir
         cp gfwlist_raw.txt PushDir/
+        curl https://cdn.jsdelivr.net/gh/blackyau/gfwlist@file/gfwlist_raw.txt > /dev/null
 
     - name: Commit files
       run: |
+        cd ./PushDir
+        echo -e "# File Url\n\nhttps://cdn.jsdelivr.net/gh/blackyau/gfwlist@file/gfwlist_raw.txt" > README.md
+        git init
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+        git add .
         git commit -m "deployed by GitHub Action" -a
 
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.TOKEN }}
         branch: 'file'
         force: true
         directory: 'PushDir'

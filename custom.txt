@@ -27,10 +27,20 @@
 ||sstatic.net
 ||stackoverflow.com
 ||travis-ci.org
+||travis-ci.com
 ||sjhs.pw
 ||pusherapp.com
 ||statuspage.io
 ||pusher.com
-!||github.io
+||github.io
+||freemypdf.com
+||gstatic.com
+||pximg.net
+||wikimedia.org
+||feedly.com
+||twimg.com
+||ntt-co-jp.club
+||ssrcloud.com
+||maying.co
 !################Custom List End################
 !---------------------EOF-----------------------
