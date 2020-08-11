@@ -43,5 +43,7 @@
 ||ssrcloud.com
 ||maying.co
 ||cdnst.net
+||cloudflare.com
+||gstatic.com
 !################Custom List End################
 !---------------------EOF-----------------------
