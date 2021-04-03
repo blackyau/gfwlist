@@ -43,5 +43,10 @@
 ||cdnst.net
 ||cloudflare.com
 ||gstatic.com
+||v2fly.org
+||hexo.io
+||katex.org
+||theme-next.js.org
+||fonticons.com
 !################Custom List End################
 !---------------------EOF-----------------------
