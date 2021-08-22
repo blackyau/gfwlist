@@ -48,5 +48,6 @@
 ||katex.org
 ||theme-next.js.org
 ||fonticons.com
+||notepad-plus-plus.org
 !################Custom List End################
 !---------------------EOF-----------------------
