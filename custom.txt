@@ -49,5 +49,6 @@
 ||theme-next.js.org
 ||fonticons.com
 ||notepad-plus-plus.org
+||logi.com
 !################Custom List End################
 !---------------------EOF-----------------------
