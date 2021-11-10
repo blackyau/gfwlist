@@ -50,5 +50,10 @@
 ||fonticons.com
 ||notepad-plus-plus.org
 ||logi.com
+||v2ex.com
+||onlinejudge.org
+||cloudera.com
+||sympy.org
+||fd.io
 !################Custom List End################
 !---------------------EOF-----------------------
