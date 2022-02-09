@@ -57,5 +57,6 @@
 ||fd.io
 ||ccp.ovh
 ||ccache.org
+||pstorage.space
 !################Custom List End################
 !---------------------EOF-----------------------
