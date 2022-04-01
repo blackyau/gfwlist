@@ -31,11 +31,15 @@ TL;DR: This list embraces websites which Chinese authorities and some service pr
 
 WARNING:
 
-* We **WON'T** deal with reports from users of provinces below:
+* Due to the peculiar network control, it is **impractical** to deal with reports from users of provinces below:
 
   - Tibet (Tibet Autonomous Region)
   - Shinjang (XinJiang Uyghur Autonomous Region)
   - Qinghai (Qinghai Province)
+  
+  Example: Baidu Wangpan is not allowed to use in XinJiang, but adding it into the list will cause trouble to the people living in the rest of the country.
+  
+  Therefore, any user within these areas is encouraged to either maintain custom rules, or use proxy all the time.
 
 * GFWList doesn't provide prompt update for URLs submitted, normally they will be fully tested before adding into the list.
 
@@ -57,3 +61,7 @@ GFWList URL(Github): https://raw.githubusercontent.com/gfwlist/gfwlist/master/gf
 5. TuxFamily: https://git.tuxfamily.org/gfwlist/gfwlist.git/plain/gfwlist.txt
 
 **Mirrors can alleviate the problem caused by raw file fetch at GitHub which might be a breach of [GitHub ToS](https://github.com/site/terms).**
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/gfwlist/gfwlist.svg)](https://starchart.cc/gfwlist/gfwlist)
