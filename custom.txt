@@ -61,5 +61,13 @@
 ||pornhubpremium.com
 ||trex-tgn.cisco.com
 ||faster.buzz
+||deepl.com
+||gstatic.com
+||staticfile.org
+||docker.com
+||play-with-docker.com
+||xn--p8jr2b2a2b5gvc4ed.com
+||python.org
+||gitlab.com
 !################Custom List End################
 !---------------------EOF-----------------------
