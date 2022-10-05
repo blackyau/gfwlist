@@ -70,5 +70,6 @@
 ||python.org
 ||gitlab.com
 ||githubusercontent.com
+||translate.googleapis.com
 !################Custom List End################
 !---------------------EOF-----------------------
