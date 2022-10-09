@@ -71,5 +71,8 @@
 ||gitlab.com
 ||githubusercontent.com
 ||translate.googleapis.com
+||singlelogin.app
+||booksc.org
+||b-ok.global
 !################Custom List End################
 !---------------------EOF-----------------------
