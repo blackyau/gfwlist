@@ -74,5 +74,6 @@
 ||singlelogin.app
 ||booksc.org
 ||b-ok.global
+||objects.githubusercontent.com
 !################Custom List End################
 !---------------------EOF-----------------------
