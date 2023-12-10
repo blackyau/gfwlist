@@ -75,5 +75,6 @@
 ||booksc.org
 ||b-ok.global
 ||objects.githubusercontent.com
+||oaistatic.com
 !################Custom List End################
 !---------------------EOF-----------------------
