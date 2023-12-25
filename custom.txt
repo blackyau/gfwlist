@@ -76,5 +76,6 @@
 ||b-ok.global
 ||objects.githubusercontent.com
 ||oaistatic.com
+||vcb-s.com
 !################Custom List End################
 !---------------------EOF-----------------------
