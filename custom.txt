@@ -80,5 +80,6 @@
 ||dmm.co.jp
 ||m-team.cc
 ||githubusercontent.com
+||time.is
 !################Custom List End################
 !---------------------EOF-----------------------
