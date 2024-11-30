@@ -81,5 +81,6 @@
 ||m-team.cc
 ||githubusercontent.com
 ||time.is
+||claude.ai
 !################Custom List End################
 !---------------------EOF-----------------------
