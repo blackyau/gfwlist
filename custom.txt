@@ -82,5 +82,6 @@
 ||githubusercontent.com
 ||time.is
 ||claude.ai
+||openai.com
 !################Custom List End################
 !---------------------EOF-----------------------
