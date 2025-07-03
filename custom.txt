@@ -69,20 +69,16 @@
 ||xn--p8jr2b2a2b5gvc4ed.com
 ||python.org
 ||gitlab.com
-||githubusercontent.com
 ||translate.googleapis.com
 ||singlelogin.app
 ||booksc.org
 ||b-ok.global
-||objects.githubusercontent.com
 ||oaistatic.com
 ||vcb-s.com
 ||dmm.co.jp
 ||m-team.cc
-||githubusercontent.com
 ||time.is
 ||claude.ai
 ||openai.com
-||githubusercontent.com
 !################Custom List End################
 !---------------------EOF-----------------------
